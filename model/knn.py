@@ -3,20 +3,19 @@ from sklearn.datasets import load_breast_cancer
 from sklearn.model_selection import train_test_split
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
-from sklearn.linear_model import LogisticRegression
+from sklearn.neighbors import KNeighborsClassifier
 
-RANDOM_STATE = 42
 data = load_breast_cancer()
 X, y = data.data, data.target
 
 X_train, _, y_train, _ = train_test_split(
-    X, y, test_size=0.20, random_state=RANDOM_STATE, stratify=y
+    X, y, test_size=0.20, random_state=42, stratify=y
 )
 
 model = Pipeline([
     ("scaler", StandardScaler()),
-    ("model", LogisticRegression(max_iter=5000, random_state=RANDOM_STATE))
+    ("model", KNeighborsClassifier(n_neighbors=5))
 ])
 model.fit(X_train, y_train)
-joblib.dump(model, "logistic_regression.pkl")
-print("Saved logistic_regression.pkl")
+joblib.dump(model, "knn.pkl")
+print("Saved knn.pkl")
