@@ -80,9 +80,6 @@ if st.button("Predict"):
         })
         confusion_matrices[name] = np.array(m[6])
 
-    st.subheader("Prediction Results")
-    st.dataframe(prediction_output, use_container_width=True)
-
     # c. Display of evaluation metrics
     st.subheader("Evaluation Metrics")
     metrics_df = pd.DataFrame(metric_rows)
