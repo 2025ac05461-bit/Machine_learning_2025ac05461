@@ -24,7 +24,7 @@ An 80/20 stratified train-test split was used with random state 42. StandardScal
 
 c. GitHub Repository Link
 
-https://github.com/2025ac05461-bit/Machine_learning_2025ac05461
+https://github.com/2025ac05461-bit/Machine_learning_2025ac05461/tree/model
 
 d. Models Used
 
