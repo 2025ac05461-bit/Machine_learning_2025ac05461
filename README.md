@@ -44,17 +44,18 @@ Model Comparison
 | Naive Bayes | 0.9298 | 0.9868 | 0.9444 | 0.9444 | 0.9444 | 0.8492 |
 | Random Forest (Ensemble) | 0.9474 | 0.9937 | 0.9583 | 0.9583 | 0.9583 | 0.8869 |
 
-Model Performance Observations
 
-| ML Model Name | Observation about model performance |
-
-| Logistic Regression | Best-performing model overall. It achieved the highest Accuracy, AUC, Precision, Recall, F1, and MCC. |
-| Decision Tree | Weakest-performing model overall, with the lowest Accuracy, AUC, Recall, F1, and MCC. |
-| kNN | Strong performer with high Accuracy, Recall, F1, and MCC. Its distance-based nature makes feature standardization important. |
-| Naive Bayes | Lower Accuracy than kNN and Random Forest, but a strong AUC of 0.9868 indicates good class-separation performance. |
-| Random Forest (Ensemble) | Strong ensemble model with 94.74% Accuracy and 0.9937 AUC, but it did not outperform Logistic Regression on the other reported metrics. |
-| **Overall Winner for your dataset?** | **Logistic Regression** - it achieved the highest score on all six reported evaluation metrics. |
-
+Logistic Regression - 
+Best-performing model overall. It achieved the highest Accuracy, AUC, Precision, Recall, F1, and MCC. 
+Decision Tree -
+ Weakest-performing model overall, with the lowest Accuracy, AUC, Recall, F1, and MCC.
+kNN - 
+Strong performer with high Accuracy, Recall, F1, and MCC. Its distance-based nature makes feature standardization important. 
+Naive Bayes - 
+Lower Accuracy than kNN and Random Forest, but a strong AUC of 0.9868 indicates good class-separation performance.
+Random Forest (Ensemble)  - 
+Strong ensemble model with 94.74% Accuracy and 0.9937 AUC, but it did not outperform Logistic Regression on the other reported metrics.
+Overall Best performing model - Logistic Regression as it achieved the highest score on all six reported evaluation metrics.
 
  Repository Structure
 
